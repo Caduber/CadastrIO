@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=close,settings" />
+    <link rel="stylesheet" href="index.css">
+    <title>Samuka's Challenge</title>
+</head>
+<body>
+    <div class="container">
+        <form action="http://localhost:3000/usuarios" method="post" id="formulario">
+        <!-- por ser api local, não da pra ser https, mas se for só o localhost também nao funciona -->
+        <!-- então usa http msm -->
+            <h2>Insira os dados:</h2>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" class="input" required>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" class="input" required>
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha" class="input" required>
+
+            <input class="btn" type="submit" value="Criar">
+        </form>
+
+        <table id="tabela">
+            <thead>
+                <td>ID</td>
+                <td>NOME</td>
+                <td>EMAIL</td>
+                <td>SENHA</td>
+                <td></td>
+                <td></td>
+            </thead>
+        <tbody id="bodyTabela">
+        </tbody>
+    </table>
+    </div>
+</body>
+    <script src="index.js"></script>
+</html>

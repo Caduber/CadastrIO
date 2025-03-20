@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root
+{
+    --bg: #16161a;
+    --key: #7f5af0;
+    --sec: #636363;
+    --contrast: #fffffe;
+}
+
+body
+{
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    justify-content: center;
+    background-color: var(--bg);
+    font-family: Montserrat;
+}
+
+/* From Uiverse.io by Juanes200122 */ 
+.container {
+    position: absolute;
+    width: 99%;
+    height: 99%;
+    perspective: 1000px;
+    background: linear-gradient(45deg, #000000 25%, transparent 25%),
+      linear-gradient(
+        -135deg,
+        #000000 25%,
+        transparent 25%,
+        transparent 75%,
+        #000000 75%,
+        #000000
+      );
+    background-size: 50px 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg);
+  }
+  
+
+#tabela
+{
+    width: 50%;
+    background-color: var(--contrast);
+    color: var();
+    border-radius: 6px;
+    border: 0px transparent;
+    overflow: hidden;
+    border-collapse: collapse;
+}
+
+thead
+{
+    color: var(--contrast);
+    background-color: var(--key);
+    font-weight: 600;
+}
+
+td
+{
+    border-bottom: 1px solid #e4e4e4;
+    padding: 10px;
+}
+
+#formulario
+{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--contrast);
+    background-color: var(--key);
+    margin: 10px;
+    padding: 0% 1% 2% 1%;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 0px 0px var(--sec);
+    margin-bottom: 60px;
+}
+
+.input
+{
+    width: 90%;
+    height: 30px;
+    border: solid 0px;
+    border-radius: 5px;
+}
+
+#formulario h2
+{
+    align-self: flex-start;
+    padding-left: 5%;
+    margin-bottom: 5px;
+}
+
+#formulario label
+{
+    align-self: flex-start;
+    padding-left: 5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 500;
+}
+
+.btn
+{
+    margin-top: 10%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 40%;
+    border: none;
+    border-radius: 15px;
+}
+
+#containerBtns
+{
+    display: flex;
+    flex-direction: row;
+    
+}
